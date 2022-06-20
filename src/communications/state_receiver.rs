@@ -47,7 +47,7 @@ impl StateReceiver {
             Self {
                 _context: context,
                 socket,
-                address: String::from("tcp://localhost:5555")
+                address: String::from("224.5.23.2:10002")
             }
         )
     }
@@ -59,7 +59,7 @@ impl StateReceiver {
         let _self = Self {
             _context: context,
             socket,
-            address: String::from("tcp://localhost:5555")
+            address: String::from("224.5.23.2:10002")
         };
 
         Ok(Box::new(_self))
